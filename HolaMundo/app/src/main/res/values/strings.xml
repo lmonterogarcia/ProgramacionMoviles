@@ -1,12 +1,16 @@
 <resources>
-    <string name="app_name">Hola Mundo</string>
-    <string name="btn_Pral">Pulsa Aquí</string>
-    <string name="btn_Aceptar">ACEPTAR</string>
-    <string name="btn_Cancelar">CANCELAR</string>
-    <string name="btn_001">Boton 1</string>
-    <string name="btn_002">Boton 2</string>
-    <string name="btn_003">Boton 3</string>
-    <string name="btn_004">Boton 4</string>
-    <string name="btn_005">Boton 5</string>
-    <string name="btn_006">Boton 6</string>
+    <string name="app_name">Hello World</string>
+    <string name="btn_Pral">Click Here</string>
+    <string name="btn_Aceptar">ACCEPT</string>
+    <string name="btn_Cancelar">CANCELL</string>
+    <string name="btn_001">Button 1</string>
+    <string name="btn_002">Button 2</string>
+    <string name="btn_003">Button 3</string>
+    <string name="btn_004">Button 4</string>
+    <string name="btn_005">Button 5</string>
+    <string name="btn_006">Button 6</string>
+    <string name="introduzca_un_numero">Introduzca un numero</string>
+    <string name="introduzca_pasword">Introduzca PASWORD</string>
+    <string name="escriba_un_nombre">Escriba un nombre</string>
+    <string name="datos">DAtos</string>
 </resources>

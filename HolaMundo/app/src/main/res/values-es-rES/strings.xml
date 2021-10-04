@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hola Mundo</string>
+    <string name="btn_Pral">Pulsa Aquí</string>
+    <string name="btn_Aceptar">ACEPTAR</string>
+    <string name="btn_Cancelar">CANCELAR</string>
+    <string name="btn_001">Boton 1</string>
+    <string name="btn_002">Boton 1</string>
+    <string name="btn_003">Boton 3</string>
+    <string name="btn_004">Boton 4</string>
+    <string name="btn_005">Boton 5</string>
+    <string name="btn_006">Boton 6</string>
+</resources>
