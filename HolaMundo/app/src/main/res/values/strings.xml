@@ -3,6 +3,8 @@
     <string name="btn_Pral">Click Here</string>
     <string name="btn_Aceptar">ACCEPT</string>
     <string name="btn_Cancelar">CANCELL</string>
+    <string name="btn_Doble">DOBLE</string>
+    <string name="btn_Triple">TRIPLE</string>
     <string name="btn_001">Button 1</string>
     <string name="btn_002">Button 2</string>
     <string name="btn_003">Button 3</string>
@@ -12,5 +14,5 @@
     <string name="introduzca_un_numero">Introduzca un numero</string>
     <string name="introduzca_pasword">Introduzca PASWORD</string>
     <string name="escriba_un_nombre">Escriba un nombre</string>
-    <string name="datos">DAtos</string>
+    <string name="datos">Datos</string>
 </resources>

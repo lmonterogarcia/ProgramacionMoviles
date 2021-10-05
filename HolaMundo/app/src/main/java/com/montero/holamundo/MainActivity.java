@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
-
-import java.time.Clock;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,51 +16,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //System.out.println("Estoy en; Oncreate()");
+        EditText txtContenido = findViewById(R.id.txtContenido);
+        Button btnDoble = findViewById(R.id.btnDoble);
+        Button btnTriple = findViewById(R.id.btnTriple);
+        TextView lblResultado = findViewById(R.id.lblResultado);
 
-        Log.i("MonteroInfo","Estoy en el: OnCreate()");
+        btnDoble.setOnClickListener(
+                v -> {
+                    try {
+                        Double dNumero = Double.parseDouble(txtContenido.getText().toString());
+                        lblResultado.setText(Double.toString(dNumero * 2));
+                    } catch( Exception e) {
+                        Toast.makeText(this,"INTRODUCE UN NÚMERO",Toast.LENGTH_LONG).show();
+                    }
+                }
+        );
+
+        btnTriple.setOnClickListener(
+                v -> {
+                    try {
+                        Double dNumero = Double.parseDouble(txtContenido.getText().toString());
+                        lblResultado.setText(Double.toString(dNumero * 3));
+                    } catch( Exception e) {
+                        Toast.makeText(this,"INTRODUCE UN NÚMERO",Toast.LENGTH_LONG).show();
+                    }
+                }
+        );
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        Log.i("MonteroInfo","Estoy en el: OnStart()");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-
-        Log.i("MonteroInfo","Estoy en el: OnRestart()");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        Log.i("MonteroInfo","Estoy en el: OnResume()");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        Log.i("MonteroInfo","Estoy en el: OnPause()");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-
-        Log.i("MonteroInfo","Estoy en el: OnStop()");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        Log.i("MonteroInfo","Estoy en el: OnDestroy()");
-    }
 }
