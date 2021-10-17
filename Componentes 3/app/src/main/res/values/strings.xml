@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Componentes2</string>
+    <string name="nombre">Nombre</string>
+    <string name="modulo">MODULO</string>
+    <string name="turno">TURNO</string>
+    <string name="dam">DAM</string>
+    <string name="daw">DAW</string>
+    <string name="asir">ASIR</string>
+    <string name="manana">Mañana</string>
+    <string name="tarde">Tarde</string>
+    <string name="online">Online</string>
+    <string name="iva">incluir IVA</string>
+    <string name="calcualar">CALCULAR IMPORTE</string>
+</resources>
