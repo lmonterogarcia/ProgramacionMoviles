@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="anchoBtn">100dp</dimen>
+    <dimen name="altoBtn">60dp</dimen>
+    <dimen name="imgPerfil">120dp</dimen>
+    <dimen name="tamanioTextNormal">18dp</dimen>
+    <dimen name="tamanioTextTitulo">24dp</dimen>
+    <dimen name="tamanioTextResaltado">36dp</dimen>
+    <dimen name="marginTop">64dp</dimen>
+    <dimen name="marginBotton">32dp</dimen>
+    <dimen name="marginTopBetween">24dp</dimen>
+</resources>

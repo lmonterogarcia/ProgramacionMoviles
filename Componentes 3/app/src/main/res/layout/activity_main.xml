@@ -9,21 +9,22 @@
 
     <EditText
         android:id="@+id/txtNombre"
+        style="@style/distanciaFrame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:ems="10"
         android:hint="@string/nombre"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
+        style="@style/distanciaBetween"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +38,7 @@
 
             <TextView
                 android:id="@+id/lblModulo"
+                style="@style/lblTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/modulo" />
@@ -48,6 +50,7 @@
 
                 <RadioButton
                     android:id="@+id/rbDam"
+                    style="@style/lblNormal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:checked="true"
@@ -55,12 +58,14 @@
 
                 <RadioButton
                     android:id="@+id/rbDaw"
+                    style="@style/lblNormal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/daw" />
 
                 <RadioButton
                     android:id="@+id/rbAsir"
+                    style="@style/lblNormal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/asir" />
@@ -75,6 +80,7 @@
 
             <TextView
                 android:id="@+id/lblTurno"
+                style="@style/lblTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/turno" />
@@ -86,6 +92,7 @@
 
                 <RadioButton
                     android:id="@+id/rbManana"
+                    style="@style/lblNormal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:checked="true"
@@ -93,12 +100,14 @@
 
                 <RadioButton
                     android:id="@+id/rbTarde"
+                    style="@style/lblNormal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/tarde" />
 
                 <RadioButton
                     android:id="@+id/rbOnline"
+                    style="@style/lblNormal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/online" />
@@ -109,10 +118,10 @@
 
     <TextView
         android:id="@+id/lblResultado"
+        style="@style/lblResaltado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:textColor="@color/design_default_color_error"
+        android:textColorHint="@color/design_default_color_error"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,9 +129,9 @@
 
     <Switch
         android:id="@+id/swIva"
-        android:layout_width="150dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="32dp"
+        style="@style/distanciaFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:checked="true"
         android:text="@string/iva"
         app:layout_constraintBottom_toBottomOf="parent"
