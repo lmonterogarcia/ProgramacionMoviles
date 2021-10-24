@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="anchoNombreHermandad">300dp</dimen>
+    <dimen name="tamanioLetraTitulo">14sp</dimen>
+    <dimen name="tamanioLetra">12sp</dimen>
+</resources>
