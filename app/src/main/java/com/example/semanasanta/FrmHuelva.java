@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class FrmHuelva extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         String[] aDiaProcesional = res.getStringArray(R.array.díaProcesional);
         TypedArray icons = res.obtainTypedArray(R.array.icons);
         // ImageView[] aRutasImagenes = res.getI(R.array.icons);
+        // String[] aRutasImagenes = res.getStringArray(R.array.sIcons);
 
         lstHermandades.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 String sAnio = "" + aAnioFundacion[position];
                 txtAnioFundacion.setText(sAnio);
                 txtDiaProcesional.setText(aDiaProcesional[position]);
+                // ivNazareno.setImageResource(aRutasImagenes[position].get);
                 ivNazareno.setImageResource(icons.getResourceId(position,0));
             }
 

@@ -6,6 +6,7 @@
     <string name="txtNombreHermandad">Hermandad de Nuestra Señora de los Desamparados y Seráfica y Servita Cofradía de Nazarenos del Santísimo Cristo de la Redención, Santo Cristo de la Preciosa Sangre y María Santísima del Dulce Nombre en su Mayor Aflicción</string>
     <string name="txtDiaProcesional">Domingo de Ramos:</string>
     <string name="txtFundacion">1983</string>
+    <string name="btnHuelva">Hermandades de Huelva</string>
 
 
     <string-array name="hermandades">
@@ -19,7 +20,7 @@
         <item>ESPERANZA</item>
     </string-array>
 
-    <array name="nombreHermandad">
+    <string-array name="nombreHermandad">
         <item>Hermandad de Nuestra Señora de los Desamparados y Seráfica y Servita Cofradía de Nazarenos del Santísimo Cristo de la Redención, Santo Cristo de la Preciosa Sangre y María Santísima del Dulce Nombre en su Mayor Aflicción</item>
         <item>Real e Ilustre Hermandad Sacramental y Cofradía de Nazarenos del Santísimo Cristo de la Victoria, Nuestra Señora de la Paz y San Rafael Arcángel</item>
         <item>Ilustre Hermandad de Nuestro Padre Jesús de las Penas en sus Tres Caídas, María Santísima del Amor y del Glorioso Apóstol Santiago</item>
@@ -28,9 +29,9 @@
         <item>Real e Ilustre Hermandad Sacramental de Nuestro Padre Jesús de la Pasión y María Santísima del Refugio</item>
         <item>Real, Antigua, Ilustre y Fervorosa Hermandad del Sagrado Corazón de Jesús y Cofradía de Nazarenos de Nuestro Padre Jesús de la Humildad Despreciado de Herodes, María Santísima de la Victoria y San Juan Evangelista (Vulgo El Polvorín)</item>
         <item>Real e Ilustre Hermandad Sacramental de San Francisco, Pura y Limpia Concepción de Nuestra Señora y Cofradía de Nazarenos del Santísimo Cristo de la Expiración, María Santísima del Mayor Dolor, San Juan Evangelista y Nuestra Señora de la Esperanza Coronada</item>
-    </array>
+    </string-array>
 
-    <array name="díaProcesional">
+    <string-array name="díaProcesional">
         <item>Domingo de Ramos</item>
         <item>Domingo de Ramos</item>
         <item>Lunes Santo</item>
@@ -39,9 +40,9 @@
         <item>Martes Santo</item>
         <item>Miércoles Santo</item>
         <item>Miércoles Santo</item>
-    </array>
+    </string-array>
 
-    <array name="anioFundacion">
+    <integer-array name="anioFundacion">
         <item>1983</item>
         <item>1943</item>
         <item>1944</item>
@@ -50,7 +51,7 @@
         <item>1536</item>
         <item>1941</item>
         <item>1893</item>
-    </array>
+    </integer-array>
 
     <integer-array name="icons">
         <item>@drawable/penitente_redencion</item>
@@ -62,4 +63,15 @@
         <item>@drawable/penitente_victoria</item>
         <item>@drawable/penitente_esperanza</item>
     </integer-array>
+
+    <string-array name="sIcons">
+        <item>@drawable/penitente_redencion</item>
+        <item>@drawable/penitente_mutilados</item>
+        <item>@drawable/penitente_trescaidas</item>
+        <item>@drawable/penitente_calvario</item>
+        <item>@drawable/penitente_estudiantes</item>
+        <item>@drawable/penitente_pasion</item>
+        <item>@drawable/penitente_victoria</item>
+        <item>@drawable/penitente_esperanza</item>
+    </string-array>
 </resources>

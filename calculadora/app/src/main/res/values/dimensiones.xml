@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="conTop">64dp</dimen>
+    <dimen name="num1conTop">128dp</dimen>
+    <dimen name="conBotton">64dp</dimen>
+    <dimen name="entreComponentes">32dp</dimen>
+    <dimen name="resultadoBotton">128dp</dimen>
+    <dimen name="anchoBtn">164dp</dimen>
+    <dimen name="fuenteTitulo">24sp</dimen>
+    <dimen name="fuenteNormal">18sp</dimen>
+    <dimen name="fuenteResultado">36sp</dimen>
+</resources>
