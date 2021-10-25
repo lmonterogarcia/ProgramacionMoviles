@@ -17,8 +17,6 @@ public class FrmSumar extends AppCompatActivity {
         setTitle(R.string.sumar);
         Button btnCalcularSumar = findViewById(R.id.btnCalcularSumar);
 
-        btnCalcularSumar = findViewById(R.id.btnCalcularSumar);
-
         btnCalcularSumar.setOnClickListener( e -> calcualarSuma());
     }
 
@@ -28,7 +26,7 @@ public class FrmSumar extends AppCompatActivity {
         TextView lblResultadoSumar = findViewById(R.id.lblResutaldoSumar);
 
         if (!dNum1.getText().toString().equals("") && !dNum2.getText().toString().equals("")){
-            String sResultado = "" + (Double.parseDouble(dNum1.getText().toString()) + Double.parseDouble(dNum2.getText().toString()));
+            String sResultado = "" + (Double.parseDouble(dNum1.getText().toString()) + (Double.parseDouble(dNum2.getText().toString())));
             lblResultadoSumar.setText(sResultado);
         } else {
             Toast.makeText(getApplicationContext(),"Tiene que rellenar los dos números", Toast.LENGTH_LONG).show();
