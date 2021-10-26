@@ -28,15 +28,15 @@ public class FrmDividir extends AppCompatActivity {
         if (!dNum1.getText().toString().equals("") && !dNum2.getText().toString().equals("")){
             Double dbNum1 = Double.parseDouble(dNum1.getText().toString()), dbNum2 = Double.parseDouble(dNum2.getText().toString());
             if (dbNum1 == 0 && dbNum2 == 0){
-                lblResultadoSumar.setText("Inderteminado");
+                lblResultadoSumar.setText(R.string.indeterminado);
             } else if (dbNum2 == 0){
-                lblResultadoSumar.setText("Infinito");
+                lblResultadoSumar.setText(R.string.infinito);
             } else {
                 String sResultado = "" + (dbNum1 / dbNum2);
                 lblResultadoSumar.setText(sResultado);
             }
         } else {
-            Toast.makeText(getApplicationContext(),"Tiene que rellenar los dos números", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.avisoNumCavios, Toast.LENGTH_LONG).show();
         }
     }
 }

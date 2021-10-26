@@ -10,7 +10,7 @@
         android:id="@+id/lblTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/conTop"
+        android:layout_marginTop="@dimen/entreComponentes"
         android:text="@string/lblTitulo"
         android:textSize="@dimen/fuenteTitulo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,9 +18,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:layout_width="@dimen/cuadradoBotones"
-        android:layout_height="@dimen/cuadradoBotones"
-        android:layout_marginTop="@dimen/num1conTop"
+        android:layout_width="425dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="@dimen/entreComponentes"
+        android:layout_marginBottom="@dimen/entreComponentes"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblTitulo">
@@ -37,7 +39,8 @@
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/sumar" />
+                app:srcCompat="@drawable/sumar"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
                 android:id="@+id/btnRestar"
@@ -46,7 +49,8 @@
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/restar" />
+                app:srcCompat="@drawable/restar"
+                tools:ignore="SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -61,7 +65,8 @@
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/multiplicar" />
+                app:srcCompat="@drawable/multiplicar"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
                 android:id="@+id/btnDividir"
@@ -70,7 +75,8 @@
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/dividir" />
+                app:srcCompat="@drawable/dividir"
+                tools:ignore="SpeakableTextPresentCheck" />
         </TableRow>
 
     </TableLayout>

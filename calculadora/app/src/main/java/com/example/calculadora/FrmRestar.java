@@ -29,7 +29,7 @@ public class FrmRestar extends AppCompatActivity {
             String sResultado = "" + (Double.parseDouble(dNum1.getText().toString()) - (Double.parseDouble(dNum2.getText().toString())));
             lblResultadoSumar.setText(sResultado);
         } else {
-            Toast.makeText(getApplicationContext(),"Tiene que rellenar los dos números", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.avisoNumCavios, Toast.LENGTH_LONG).show();
         }
     }
 }

@@ -9,4 +9,5 @@
     <dimen name="fuenteTitulo">24sp</dimen>
     <dimen name="fuenteNormal">18sp</dimen>
     <dimen name="fuenteResultado">36sp</dimen>
+    <dimen name="cuadradoBotones">250dp</dimen>
 </resources>

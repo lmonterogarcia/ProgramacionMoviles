@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="sumar">SUMAR</string>
+    <string name="restar">RESTAR</string>
+    <string name="multiplicar">MULTIPLICAR</string>
+    <string name="dividir">DIVIDIR</string>
+    <string name="lblTitulo">CALCULADORA SIMPLE</string>
+    <string name="btnCalcular">CALCULAR</string>
+    <string name="numero1">NÚMERO 1</string>
+    <string name="numero2">NÚMERO 2</string>
+    <string name="avisoNumCavios">Tiene que rellenar los dos números</string>
+    <string name="indeterminado">Indeterminado</string>
+    <string name="infinito">Infinito</string>
+</resources>
