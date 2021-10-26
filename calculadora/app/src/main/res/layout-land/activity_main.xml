@@ -18,10 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:layout_width="425dp"
-        android:layout_height="280dp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/cuadradoBotonesLand"
+        android:layout_marginStart="@dimen/entreComponentes"
         android:layout_marginTop="@dimen/entreComponentes"
-        android:layout_marginBottom="@dimen/entreComponentes"
+        android:layout_marginEnd="@dimen/entreComponentes"
+        android:layout_marginBottom="@dimen/conBotton"
+        android:collapseColumns="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +39,7 @@
                 android:id="@+id/btnSumar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:scaleType="fitCenter"
@@ -46,22 +50,18 @@
                 android:id="@+id/btnRestar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/restar"
                 tools:ignore="SpeakableTextPresentCheck" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
 
             <ImageButton
                 android:id="@+id/btnMultiplicar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:scaleType="fitCenter"
@@ -72,6 +72,7 @@
                 android:id="@+id/btnDividir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:layout_weight="1"
                 android:background="@android:drawable/screen_background_light_transparent"
                 android:scaleType="fitCenter"

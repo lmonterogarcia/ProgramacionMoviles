@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Volumenes</string>
+    <string name="mayorCero">Vous devez saisir une valeur supérieure à zéro</string>
+    <string name="faltandatos">Vous devez remplir tous les champs</string>
+    <string name="ventanaCilindro">" Volume du cylindre"</string>
+    <string name="ventanaEsfera">"Volume de la sphère "</string>
+    <string name="ventanaCubo">Volume du godet</string>
+    <string name="altura">Hauteur</string>
+    <string name="radio">Radio</string>
+    <string name="lado">Côté</string>
+    <string name="calcular">CALCULER</string>
+    <string name="cinlindro">CYLINDRE</string>
+    <string name="esfera">SPHÈRE</string>
+    <string name="cubo">"CUBE "</string>
+</resources>

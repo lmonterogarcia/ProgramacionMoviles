@@ -10,4 +10,5 @@
     <dimen name="fuenteNormal">18sp</dimen>
     <dimen name="fuenteResultado">36sp</dimen>
     <dimen name="cuadradoBotones">250dp</dimen>
+    <dimen name="cuadradoBotonesLand">250dp</dimen>
 </resources>

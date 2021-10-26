@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Volumes</string>
+    <string name="cubo">CUBE</string>
+    <string name="esfera">SPHERE</string>
+    <string name="cinlindro">CYLINDER</string>
+    <string name="calcular">CALCULATE</string>
+    <string name="lado">Side</string>
+    <string name="radio">Radius</string>
+    <string name="altura">"Height "</string>
+    <string name="ventanaCubo">Cube volume</string>
+    <string name="ventanaEsfera">Sphere volume</string>
+    <string name="ventanaCilindro">Cylinder volume</string>
+    <string name="faltandatos">" You have to fill in all the fields"</string>
+    <string name="mayorCero">You have to enter a value greater than zero</string>
+
+</resources>

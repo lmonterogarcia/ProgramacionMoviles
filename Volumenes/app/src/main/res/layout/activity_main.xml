@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivCubo"
+        style="@style/fotos"
+        android:layout_marginStart="@dimen/toStart"
+        android:layout_marginTop="@dimen/toTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cubo" />
+
+    <TextView
+        android:id="@+id/lblCubo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/entreComponenetesH"
+        android:layout_marginTop="@dimen/lblconTop"
+        android:text="@string/cubo"
+        android:textSize="@dimen/letraGande"
+        app:layout_constraintStart_toEndOf="@+id/ivCubo"
+        app:layout_constraintTop_toTopOf="@+id/ivCubo" />
+
+    <ImageView
+        android:id="@+id/ivEsfera"
+        style="@style/fotos"
+        android:layout_marginStart="@dimen/toStart"
+        android:layout_marginTop="@dimen/entreComponenetesV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCubo"
+        app:srcCompat="@drawable/esfera" />
+
+    <ImageView
+        android:id="@+id/ivCilindro"
+        style="@style/fotos"
+        android:layout_marginStart="@dimen/toStart"
+        android:layout_marginTop="@dimen/entreComponenetesV"
+        android:theme="@style/fotos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivEsfera"
+        app:srcCompat="@drawable/cilindro" />
+
+    <TextView
+        android:id="@+id/lblEsfera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/entreComponenetesH"
+        android:layout_marginTop="@dimen/lblconTop"
+        android:text="@string/esfera"
+        android:textSize="@dimen/letraGande"
+        app:layout_constraintStart_toEndOf="@+id/ivEsfera"
+        app:layout_constraintTop_toTopOf="@+id/ivEsfera" />
+
+    <TextView
+        android:id="@+id/lblCilindro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/entreComponenetesH"
+        android:layout_marginTop="@dimen/lblconTop"
+        android:text="@string/cinlindro"
+        android:textSize="@dimen/letraGande"
+        app:layout_constraintStart_toEndOf="@+id/ivCilindro"
+        app:layout_constraintTop_toTopOf="@+id/ivCilindro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

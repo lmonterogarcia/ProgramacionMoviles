@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Volumenes</string>
+    <string name="cubo">CUBO</string>
+    <string name="esfera">ESFERA</string>
+    <string name="cinlindro">CILINDRO</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="lado">Lado</string>
+    <string name="radio">Radio</string>
+    <string name="altura">Altura</string>
+    <string name="ventanaCubo">Volumnen del cubo</string>
+    <string name="ventanaEsfera">Volumnen de la esfera</string>
+    <string name="ventanaCilindro">Volumnen del cilindro</string>
+    <string name="mayorCero">Tiene que introducir un valor mayor que cero</string>
+    <string name="faltandatos">Tiene que rellenar todos los campos</string>
+</resources>
