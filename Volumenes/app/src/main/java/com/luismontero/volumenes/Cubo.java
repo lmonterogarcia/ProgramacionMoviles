@@ -9,8 +9,7 @@ import android.widget.Toast;
 
 public class Cubo extends AppCompatActivity {
 
-    private EditText txtLadoCubo = findViewById(R.id.txtLadoCubo);
-    private TextView lblResultadoCubo = findViewById(R.id.lblResultadoCubo);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +24,9 @@ public class Cubo extends AppCompatActivity {
     }
 
     private void CalcularCubo(){
-        if (txtLadoCubo.getText().toString().equals("")){
+        EditText txtLadoCubo = findViewById(R.id.txtLadoCubo);
+        TextView lblResultadoCubo = findViewById(R.id.lblResultadoCubo);
+        if (!txtLadoCubo.getText().toString().equals("")){
             double dLado = Double.parseDouble(txtLadoCubo.getText().toString());
             if (dLado > 0){
                 lblResultadoCubo.setText("" + (dLado*3));

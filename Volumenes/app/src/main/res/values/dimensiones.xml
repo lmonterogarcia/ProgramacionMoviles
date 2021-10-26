@@ -6,9 +6,9 @@
     <dimen name="toStart">64dp</dimen>
     <dimen name="toBotton">64dp</dimen>
     <dimen name="ladoImagen">150dp</dimen>
-    <dimen name="letraNormal">18</dimen>
-    <dimen name="letraGande">24</dimen>
-    <dimen name="letraExtra">36</dimen>
-    <dimen name="lblconTop">60</dimen>
-    <dimen name="lblconTopLand">30</dimen>
+    <dimen name="letraNormal">18sp</dimen>
+    <dimen name="letraGande">24sp</dimen>
+    <dimen name="letraExtra">36sp</dimen>
+    <dimen name="lblconTop">60dp</dimen>
+    <dimen name="lblconTopLand">30dp</dimen>
 </resources>

@@ -10,9 +10,6 @@ import android.widget.Toast;
 
 public class Cilindro extends AppCompatActivity {
 
-    private EditText txtRadioCilindro = findViewById(R.id.txtRadioCilindro);
-    private EditText txtAlturaCilindro = findViewById(R.id.txtAlturaCilindro);
-    private TextView lblResultadoCilindro = findViewById(R.id.lblResultadoCilindro);
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +25,11 @@ public class Cilindro extends AppCompatActivity {
     }
 
     private void CalcularCilindro(){
-        if (txtRadioCilindro.getText().toString().equals("") && txtAlturaCilindro.getText().toString().equals("")){
+        EditText txtRadioCilindro = findViewById(R.id.txtRadioCilindro);
+        EditText txtAlturaCilindro = findViewById(R.id.txtAlturaCilindro);
+        TextView lblResultadoCilindro = findViewById(R.id.lblResultadoCilindro);
+
+        if (!txtRadioCilindro.getText().toString().equals("") && !txtAlturaCilindro.getText().toString().equals("")){
             double dRadio = Double.parseDouble(txtRadioCilindro.getText().toString());
             double dAltura = Double.parseDouble(txtAlturaCilindro.getText().toString());
             if (dRadio > 0 && dAltura > 0 ){

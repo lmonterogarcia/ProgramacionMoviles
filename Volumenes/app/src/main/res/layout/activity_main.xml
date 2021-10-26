@@ -30,7 +30,7 @@
         android:id="@+id/ivEsfera"
         style="@style/fotos"
         android:layout_marginStart="@dimen/toStart"
-        android:layout_marginTop="@dimen/entreComponenetesV"
+        app:layout_constraintBottom_toTopOf="@+id/ivCilindro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivCubo"
         app:srcCompat="@drawable/esfera" />
@@ -39,10 +39,10 @@
         android:id="@+id/ivCilindro"
         style="@style/fotos"
         android:layout_marginStart="@dimen/toStart"
-        android:layout_marginTop="@dimen/entreComponenetesV"
+        android:layout_marginBottom="@dimen/entreComponenetesV"
         android:theme="@style/fotos"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivEsfera"
         app:srcCompat="@drawable/cilindro" />
 
     <TextView
