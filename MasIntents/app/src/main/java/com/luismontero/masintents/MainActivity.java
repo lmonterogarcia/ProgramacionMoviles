@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
  //               requestPermissions(new String[]{CALL_PHONE}, 1);
  //           }
 
-//            String sValue = "user@gmail.com+34682145634";
+//            String sValue = "user@gmail.com";
 //            String sData = "mailto:" + sValue;
 
 //            Intent intent = new Intent(Intent.ACTION_SENDTO);

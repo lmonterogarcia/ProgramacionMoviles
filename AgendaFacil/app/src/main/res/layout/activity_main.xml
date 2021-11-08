@@ -32,18 +32,20 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton"
+                    android:id="@+id/ib01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/ib01Num"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/e" />
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/ib02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/ib02Num"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/q" />
             </LinearLayout>
@@ -60,18 +62,20 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/ib03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/ib03Num"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/r" />
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/ib04"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/ib04Num"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/t" />
             </LinearLayout>
@@ -88,18 +92,20 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/ib05"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/ib05Num"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/w" />
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/ib06"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:contentDescription="@string/ib06Num"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/y" />
             </LinearLayout>
