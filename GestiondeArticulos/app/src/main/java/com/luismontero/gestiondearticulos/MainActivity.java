@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,8 +44,11 @@ public class MainActivity extends AppCompatActivity {
         ArticulosAdapter adaptador = new ArticulosAdapter(this);
         rvArticulos.setAdapter(adaptador);
 
-      //  adaptador.setOnClickListener( v->{
-
-      //  });
+        adaptador.setOnClickListener( v->{
+            Store.articuloSeleccionado = rvArticulos.getChildAdapterPosition(v);
+            //Toast.makeText(this,"Item " + Store.articuloSeleccionado, Toast.LENGTH_LONG).show();
+            Intent i = new Intent(this, articulos_detalle.class);
+            startActivity(i);
+        });
     }
 }

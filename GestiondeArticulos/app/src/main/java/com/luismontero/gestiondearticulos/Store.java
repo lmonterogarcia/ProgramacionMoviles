@@ -6,4 +6,5 @@ import java.util.List;
 public class Store {
     
     public static List<Articulos> lstArticulos = new ArrayList<Articulos>();
+    public static int articuloSeleccionado;
 }
