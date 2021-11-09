@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.ib05).setOnClickListener(e -> {
+        findViewById(R.id.ib07).setOnClickListener(e -> {
             String sData01 = "tel:" + "+34" + R.string.ib05Num;
 
             Intent intent = new Intent(Intent.ACTION_CALL);
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.ib06).setOnClickListener(e -> {
+        findViewById(R.id.ib08).setOnClickListener(e -> {
             String sData01 = "tel:" + "+34" + R.string.ib06Num;
 
             Intent intent = new Intent(Intent.ACTION_CALL);

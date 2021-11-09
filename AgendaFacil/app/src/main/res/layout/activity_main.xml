@@ -6,110 +6,198 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/lyGrid"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rowCount="3">
+        app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.gridlayout.widget.GridLayout>
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TableRow
-            android:layout_width="wrap_content"
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <LinearLayout
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib05Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/w" />
+
+                    <ImageButton
+                        android:id="@+id/ib08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib06Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/y" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib05Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/w" />
+
+                    <ImageButton
+                        android:id="@+id/ib08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib06Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/y" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib05Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/w" />
+
+                    <ImageButton
+                        android:id="@+id/ib08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib06Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/y" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
-                <ImageButton
-                    android:id="@+id/ib01"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/ib01Num"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/e" />
+                    android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/ib02"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/ib02Num"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/q" />
-            </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/ib01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib01Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/e" />
 
-        </TableRow>
+                    <ImageButton
+                        android:id="@+id/ib02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib02Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/q" />
+                </LinearLayout>
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            </TableRow>
 
-            <LinearLayout
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
-                <ImageButton
-                    android:id="@+id/ib03"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/ib03Num"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/r" />
+                    android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/ib04"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/ib04Num"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/t" />
-            </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/ib03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib03Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/r" />
 
-        </TableRow>
+                    <ImageButton
+                        android:id="@+id/ib04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib04Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/t" />
+                </LinearLayout>
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            </TableRow>
 
-            <LinearLayout
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
-                <ImageButton
-                    android:id="@+id/ib05"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/ib05Num"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/w" />
+                    android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/ib06"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/ib06Num"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/y" />
-            </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/ib05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib05Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/w" />
 
-        </TableRow>
-    </TableLayout>
+                    <ImageButton
+                        android:id="@+id/ib06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ib06Num"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/y" />
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
