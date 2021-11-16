@@ -3,6 +3,7 @@ package com.luismontero.sqlitebasico;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -57,8 +58,16 @@ public class MainActivity extends AppCompatActivity {
             DB_SQLite db = new DB_SQLite(this);
             SQLiteDatabase conn = db.getWritableDatabase();
 
-            String sInstruccion = "INSERT INTO PRODUCTO (nombre, cantidad, seccion) VALUES('" + sNombre + "'," + Integer.parseInt(sCantidad) + ",'" + sSeccion + "')";
-            conn.execSQL(sInstruccion);
+            //String sInstruccion = "INSERT INTO PRODUCTO (nombre, cantidad, seccion) VALUES('" + sNombre + "'," + Integer.parseInt(sCantidad) + ",'" + sSeccion + "')";
+            //conn.execSQL(sInstruccion);
+
+            ContentValues content = new ContentValues();
+            content.put("nombre", sNombre);
+            content.put("cantidad", sCantidad);
+            content.put("seccion", sSeccion);
+
+            conn.insert("PRODUCTO", null, content);
+
             mostrarMensaje("El producto " + sNombre + " ha sido insertado");
             limpiarCuadros();
             conn.close();
@@ -75,11 +84,16 @@ public class MainActivity extends AppCompatActivity {
             DB_SQLite db = new DB_SQLite(this);
             SQLiteDatabase conn = db.getWritableDatabase();
 
-            String sInstruccion = "DELETE FROM PRODUCTO WHERE nombre LIKE '" + sNombre + "'";
-            conn.execSQL(sInstruccion);
-            mostrarMensaje("El producto " + sNombre + " ha sido eliminado");
+            //String sInstruccion = "DELETE FROM PRODUCTO WHERE nombre LIKE '" + sNombre + "'";
+            //conn.execSQL(sInstruccion);
+
+            String sql = "nombre LIKE '" + sNombre + "'";
+            int filasBorradas = conn.delete("PRODUCTO", sql,null);
+
             limpiarCuadros();
             conn.close();
+
+            mostrarMensaje("Se han borrado " + filasBorradas + "tantas filas.");
         }
 
 
@@ -97,11 +111,22 @@ public class MainActivity extends AppCompatActivity {
             DB_SQLite db = new DB_SQLite(this);
             SQLiteDatabase conn = db.getWritableDatabase();
 
-            String sInstruccion = "UPDATE PRODUCTO SET cantidad = " + Integer.parseInt(sCantidad) + ", seccion = '" + sSeccion  + "' WHERE nombre = '" + sNombre + "'";
-            conn.execSQL(sInstruccion);
-            mostrarMensaje("El producto " + sNombre + " ha sido modificado");
+            //String sInstruccion = "UPDATE PRODUCTO SET cantidad = " + Integer.parseInt(sCantidad) + ", seccion = '" + sSeccion  + "' WHERE nombre = '" + sNombre + "'";
+            //conn.execSQL(sInstruccion);
+
+            ContentValues content = new ContentValues();
+            content.put("nombre", sNombre);
+            content.put("cantidad", sCantidad);
+            content.put("seccion", sSeccion);
+
+            String condicion = "nombre LIKE '" + sNombre + "'";
+
+            conn.update("PRODUCTO", content, condicion, null);
+
             limpiarCuadros();
             conn.close();
+
+            mostrarMensaje("El producto " + sNombre + " ha sido modificado");
         }
 
     }
@@ -152,8 +177,17 @@ public class MainActivity extends AppCompatActivity {
         DB_SQLite db = new DB_SQLite(this);
         SQLiteDatabase conn = db.getReadableDatabase();
 
-        String sInstruccion = "SELECT * FROM PRODUCTO ORDER BY nombre ASC";
-        Cursor cursor = conn.rawQuery(sInstruccion,null);
+        String sqlTableName = "PRODUCTO";
+        String[] sqlFields = {"Id_Producto","nombre", "cantidad","seccion"};
+        String sqlWhere = "";
+        String sqlGroupBy = "";
+        String sqlHaving = "";
+        String sqlOrderBy = "nombre ASC";
+
+        //String sInstruccion = "SELECT * FROM PRODUCTO ORDER BY nombre ASC";
+        //Cursor cursor = conn.rawQuery(sInstruccion,null);
+
+        Cursor cursor = conn.query(sqlTableName,sqlFields,sqlWhere,null, sqlGroupBy,sqlHaving,sqlOrderBy);
 
         if(cursor.getCount() == 0){
             mostrarMensaje("La Tabla está vacia");
