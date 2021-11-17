@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GestionDeArticulos">
         <activity
-            android:name=".articulos_detalle"
+            android:name=".Articulos_detalle"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

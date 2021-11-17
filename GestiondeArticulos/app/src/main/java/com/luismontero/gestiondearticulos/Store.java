@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Store {
     
-    public static List<Articulos> lstArticulos = new ArrayList<Articulos>();
+    public static List<Articulo> lstArticulos = new ArrayList<Articulo>();
     public static int articuloSeleccionado;
+
 }

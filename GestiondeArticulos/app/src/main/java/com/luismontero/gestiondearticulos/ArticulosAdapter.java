@@ -22,7 +22,7 @@ public class ArticulosAdapter extends RecyclerView.Adapter<ArticulosAdapter.View
 
     @NonNull
     @Override
-    public ArticulosAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflated = LayoutInflater.from(context);
         View view = inflated.inflate(R.layout.articulos_item, parent, false);
         view.setOnClickListener(this);
@@ -30,7 +30,7 @@ public class ArticulosAdapter extends RecyclerView.Adapter<ArticulosAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ArticulosAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         String sNombreArticulo = Store.lstArticulos.get(position).getsNombre();
         String sPrecio = (Store.lstArticulos.get(position).getdPrecio()) + " €";

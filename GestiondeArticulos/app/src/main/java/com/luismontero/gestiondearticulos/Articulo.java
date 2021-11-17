@@ -1,17 +1,17 @@
 package com.luismontero.gestiondearticulos;
 
-public class Articulos {
+public class Articulo {
     private String sNombre;
     private Double dPrecio;
     private Integer iStock;
 
-    public Articulos() {
+    public Articulo() {
         this.sNombre = "";
         this.dPrecio = null;
         this.iStock = null;
     }
     
-    public Articulos(String sNombre, Double dPrecio, Integer iStock) {
+    public Articulo(String sNombre, Double dPrecio, Integer iStock) {
         this.sNombre = sNombre;
         this.dPrecio = dPrecio;
         this.iStock = iStock;

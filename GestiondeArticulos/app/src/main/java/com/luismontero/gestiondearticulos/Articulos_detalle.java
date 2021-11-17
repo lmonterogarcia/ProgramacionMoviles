@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class articulos_detalle extends AppCompatActivity {
+public class Articulos_detalle extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
