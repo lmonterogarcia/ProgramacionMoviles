@@ -6,16 +6,20 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 public class DB_SQLite extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "Casas.db";
     private static final int DATABASE_VERSION = 1;
 
-    private static final String SQL_CREATE_ENTRIES = "CREATE TABLE CASA (Id_Producto INTEGER PRIMARY KEY AUTOINCREMENT, calle TEXT, numero INTEGER, superficie NUMBER(5,2))";
+    private static final String SQL_CREATE_ENTRIES = "CREATE TABLE CASA (Id_Casa INTEGER PRIMARY KEY AUTOINCREMENT, calle TEXT, numero INTEGER, superficie REAL)";
     private static final String SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS CASA";
 
     public DB_SQLite(@Nullable Context context) {
-        super(context, DATABASE_NAME,  null, DATABASE_VERSION);
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override

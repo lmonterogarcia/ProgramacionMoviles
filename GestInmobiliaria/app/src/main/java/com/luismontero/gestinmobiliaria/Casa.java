@@ -2,7 +2,7 @@ package com.luismontero.gestinmobiliaria;
 
 public class Casa {
 
-    private Integer iId, iNumero;
+    private Integer iIdCasa, iNumero;
     private String sCalle;
     private Double dSuperficie;
 
@@ -16,18 +16,18 @@ public class Casa {
     }
 
     public Casa(Integer iId, String sCalle, Integer iNumero, Double dSuperficie) {
-        this.iId = iId;
+        this.iIdCasa = iId;
         this.iNumero = iNumero;
         this.sCalle = sCalle;
         this.dSuperficie = dSuperficie;
     }
 
-    public Integer getiId() {
-        return iId;
+    public Integer getiIdCasa() {
+        return iIdCasa;
     }
 
-    public void setiId(Integer iId) {
-        this.iId = iId;
+    public void setiIdCasa(Integer iIdCasa) {
+        this.iIdCasa = iIdCasa;
     }
 
     public Integer getiNumero() {
@@ -56,7 +56,7 @@ public class Casa {
 
     @Override
     public String toString() {
-        return "Casa [iId=" + iId + ", iNumero=" + iNumero + ", sCalle=" + sCalle + ", dSuperficie=" + dSuperficie
+        return "Casa [iId=" + iIdCasa + ", iNumero=" + iNumero + ", sCalle=" + sCalle + ", dSuperficie=" + dSuperficie
                 + "]";
     }
 

@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class Articulos_detalle extends AppCompatActivity {
+public class Articulo_detalle extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_articulos_detalle);
+        setContentView(R.layout.activity_articulo_detalle);
 
         TextView lblDetallId = findViewById(R.id.lblDetalleId);
         TextView lblDetalleNombre = findViewById(R.id.lblDetalleNombre);

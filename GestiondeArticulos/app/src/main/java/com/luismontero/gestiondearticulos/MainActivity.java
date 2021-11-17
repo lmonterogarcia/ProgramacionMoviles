@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         adaptador.setOnClickListener(v -> {
             Store.articuloSeleccionado = rvArticulos.getChildAdapterPosition(v);
             //Toast.makeText(this,"Item " + Store.articuloSeleccionado, Toast.LENGTH_LONG).show();
-            Intent i = new Intent(this, Articulos_detalle.class);
+            Intent i = new Intent(this, Articulo_detalle.class);
             startActivity(i);
         });
     }

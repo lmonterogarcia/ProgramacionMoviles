@@ -5,6 +5,9 @@ import java.util.List;
 
 public class Inmobiliaria {
 
-    public static List<Casa> lstArticulos = new ArrayList<Casa>();
+    public static List<Casa> lstCasas = new ArrayList<Casa>();
     public static int CasaSeleccionada;
+    public static boolean booInsertar = true;
+    public static int ultimoId;
+
 }
