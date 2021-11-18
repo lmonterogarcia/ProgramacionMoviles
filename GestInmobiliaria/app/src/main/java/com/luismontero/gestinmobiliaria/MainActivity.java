@@ -41,13 +41,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Inmobiliaria.ultimoId = Inmobiliaria.lstCasas.get(Inmobiliaria.lstCasas.size() - 1).getiIdCasa();
         }
-
     }
 
     private void cargarData() {
         Inmobiliaria.lstCasas.addAll(loadDBdata());
-
-
     }
 
     private void mostarData() {

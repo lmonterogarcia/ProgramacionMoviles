@@ -17,6 +17,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/lblId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/idcasa"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/txtCalle"
             android:layout_width="match_parent"

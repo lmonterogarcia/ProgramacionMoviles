@@ -6,4 +6,5 @@
     <string name="calle">calle...</string>
     <string name="numero">número...</string>
     <string name="superficie">superficie...</string>
+    <string name="idcasa">ID</string>
 </resources>
