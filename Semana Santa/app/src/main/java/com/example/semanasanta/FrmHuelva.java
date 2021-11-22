@@ -30,8 +30,6 @@ public class FrmHuelva extends AppCompatActivity {
         int[] aAnioFundacion = res.getIntArray(R.array.anioFundacion);
         String[] aDiaProcesional = res.getStringArray(R.array.díaProcesional);
         TypedArray icons = res.obtainTypedArray(R.array.icons);
-        // ImageView[] aRutasImagenes = res.getI(R.array.icons);
-        // String[] aRutasImagenes = res.getStringArray(R.array.sIcons);
 
         lstHermandades.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -41,7 +39,6 @@ public class FrmHuelva extends AppCompatActivity {
                 String sAnio = "" + aAnioFundacion[position];
                 txtAnioFundacion.setText(sAnio);
                 txtDiaProcesional.setText(aDiaProcesional[position]);
-                // ivNazareno.setImageResource(aRutasImagenes[position].get);
                 ivNazareno.setImageResource(icons.getResourceId(position,0));
             }
 

@@ -64,14 +64,4 @@
         <item>@drawable/penitente_esperanza</item>
     </integer-array>
 
-    <string-array name="sIcons">
-        <item>@drawable/penitente_redencion</item>
-        <item>@drawable/penitente_mutilados</item>
-        <item>@drawable/penitente_trescaidas</item>
-        <item>@drawable/penitente_calvario</item>
-        <item>@drawable/penitente_estudiantes</item>
-        <item>@drawable/penitente_pasion</item>
-        <item>@drawable/penitente_victoria</item>
-        <item>@drawable/penitente_esperanza</item>
-    </string-array>
 </resources>

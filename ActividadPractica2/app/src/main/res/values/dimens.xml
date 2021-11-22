@@ -2,4 +2,6 @@
 <resources>
     <dimen name="btnCornerRadius">20dp</dimen>
     <dimen name="ladoImagen">150dp</dimen>
+    <dimen name="tamanioLetraTitulo">14sp</dimen>
+    <dimen name="tamanioLetra">12sp</dimen>
 </resources>
