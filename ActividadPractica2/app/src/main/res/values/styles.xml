@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <style name="btnNormal">
+        <item name="cornerRadius">@dimen/btnCornerRadius</item>
+        <item name="backgroundTint">@color/PrimarySecundary</item>
+    </style>
 </resources>
