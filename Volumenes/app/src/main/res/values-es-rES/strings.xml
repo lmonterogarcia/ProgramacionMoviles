@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Volumenes</string>
+    <string name="app_name">Primera Prueba Practica</string>
     <string name="cubo">CUBO</string>
     <string name="esfera">ESFERA</string>
     <string name="cinlindro">CILINDRO</string>

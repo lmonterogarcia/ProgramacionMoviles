@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Volumenes</string>
+    <string name="app_name">Primera prueba practica en frances</string>
     <string name="mayorCero">Vous devez saisir une valeur supérieure à zéro</string>
     <string name="faltandatos">Vous devez remplir tous les champs</string>
     <string name="ventanaCilindro">" Volume du cylindre"</string>
