@@ -1,32 +1,20 @@
 <resources>
-    <string name="app_name">Actividad Practica 2</string>
-    <string name="aceptar">ACEPTAR</string>
-    <string name="cancelar">CANCELAR</string>
+    <string name="app_name">Lista de Tareas</string>
     <string name="guardar">GUARDAR</string>
-    <string name="borrar">BORRAR</string>
 
-    <!-- Arrays -->
-    <string-array name="díaProcesional">
-        <item>Domingo de Ramos</item>
-        <item>Domingo de Ramos</item>
-        <item>Lunes Santo</item>
-        <item>Lunes Santo</item>
-        <item>Martes Santo</item>
-        <item>Martes Santo</item>
-        <item>Miércoles Santo</item>
-        <item>Miércoles Santo</item>
+    <string name="id">ID</string>
+    <string name="titulo_tarea">Título de la tarea...</string>
+    <string name="fecha">Fecha DD/MM/AAAA...</string>
+    <string name="hora">Hora HH:MM...</string>
+
+    <string name="cardFecha">Fecha DD/MM/AAAA</string>
+    <string name="carHora">Hora HH:MM</string>
+
+    <string-array name="categorias">
+        <item>PERSONAL</item>
+        <item>TRABAJO</item>
+        <item>CASA</item>
+        <item>VACACIONES</item>
     </string-array>
-    <!-- Arrays para imagenes
-    <integer-array name="icons">
-        <item>@drawable/penitente_redencion</item>
-        <item>@drawable/penitente_mutilados</item>
-        <item>@drawable/penitente_trescaidas</item>
-        <item>@drawable/penitente_calvario</item>
-        <item>@drawable/penitente_estudiantes</item>
-        <item>@drawable/penitente_pasion</item>
-        <item>@drawable/penitente_victoria</item>
-        <item>@drawable/penitente_esperanza</item>
-    </integer-array>
-    -->
 
 </resources>

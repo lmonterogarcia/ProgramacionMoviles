@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 public class CasasAdapter extends RecyclerView.Adapter<CasasAdapter.ViewHolder> implements View.OnClickListener{
 
     private Context context;
-
     private View.OnClickListener listener;
 
 

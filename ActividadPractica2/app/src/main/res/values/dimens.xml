@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="btnCornerRadius">20dp</dimen>
-    <dimen name="ladoImagen">150dp</dimen>
+    <dimen name="cardCornerRadius">5dp</dimen>
+    <dimen name="cardElevation">5dp</dimen>
+    <dimen name="cardMargin">16dp</dimen>
     <dimen name="tamanioLetraTitulo">14sp</dimen>
     <dimen name="tamanioLetra">12sp</dimen>
+
+    <dimen name="btnCornerRadius">10dp</dimen>
+
+    <dimen name="detalle_Hmargin">32dp</dimen>
+    <dimen name="detalle_Vmargin">16dp</dimen>
+
+    <dimen name="fblt_espaciado">32dp</dimen>
 </resources>

@@ -35,11 +35,18 @@ public class MainActivity extends AppCompatActivity {
         mostarData();
     }
 
+    @SuppressLint("Range")
     private void ultimoId(){
         if (Inmobiliaria.lstCasas.size() == 0){
             Inmobiliaria.ultimoId = 0;
         } else {
-            Inmobiliaria.ultimoId = Inmobiliaria.lstCasas.get(Inmobiliaria.lstCasas.size() - 1).getiIdCasa();
+            DB_SQLite db = new DB_SQLite(this);
+            SQLiteDatabase conn = db.getWritableDatabase();
+
+            String sInstruccion = "SELECT max(Id_Producto) FROM CASA";
+            Cursor cursor = conn.rawQuery(sInstruccion, null);
+
+            Inmobiliaria.ultimoId = (int) cursor.getLong(cursor.getColumnIndex("Id_Producto"));
         }
     }
 

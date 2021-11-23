@@ -4,7 +4,24 @@
     <color name="PrimarySecundary">#FF8F00</color>
     <color name="PrimaryVariant">#D84315</color>
     <color name="SecundaryMain">#0277BD</color>
-    <color name="SecundaryVariant">#283593</color>
+    <color name="SecundaryVariant">#00838F</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="logo_background">#FFFFFFFF</color>
+
+    <color name="clr_personal">#C62828</color>
+    <color name="clr_trabajo">#283593</color>
+    <color name="clr_casa">#2E7D32</color>
+    <color name="clr_vacaciones">#6A1B9A</color>
+
+    <!--
+    <array name="colores">
+        <color name="clr_personal">#C62828</color>
+        <color name="clr_trabajo">#283593</color>
+        <color name="clr_casa">#2E7D32</color>
+        <color name="clr_vacaciones">#6A1B9A</color>
+    </array>
+    -->
+
 </resources>
