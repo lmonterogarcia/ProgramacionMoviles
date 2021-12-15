@@ -10,10 +10,10 @@
 
     <color name="logo_background">#FFFFFFFF</color>
 
-    <color name="clr_personal">#C62828</color>
-    <color name="clr_trabajo">#283593</color>
-    <color name="clr_casa">#2E7D32</color>
-    <color name="clr_vacaciones">#6A1B9A</color>
+    <color name="clr_personal">#44C62828</color>
+    <color name="clr_trabajo">#44283593</color>
+    <color name="clr_casa">#442E7D32</color>
+    <color name="clr_vacaciones">#446A1B9A</color>
 
     <!--
     <array name="colores">

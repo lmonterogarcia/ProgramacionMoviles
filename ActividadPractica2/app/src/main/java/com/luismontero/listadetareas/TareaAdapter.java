@@ -3,9 +3,11 @@ package com.luismontero.listadetareas;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -47,11 +49,13 @@ public class TareaAdapter extends RecyclerView.Adapter<TareaAdapter.ViewHolder> 
         holder.lblFecha.setText(sFecha);
         holder.lblHora.setText(sHora);
 
+        //holder.card.setBackgroundColor(Color.parseColor("#2E7D32"));
+
         switch (Store.lstTareas.get(position).getiCategoria()){ //ESTO NO FUNCIONAAAAAAAA**************************
-            case 0: holder.card.setCardBackgroundColor(R.color.clr_personal); break;
-            case 1: holder.card.setCardBackgroundColor(R.color.clr_trabajo); break;
-            case 2: holder.card.setCardBackgroundColor(R.color.clr_casa); break;
-            case 3: holder.card.setCardBackgroundColor(R.color.clr_vacaciones); break;
+            case 0: holder.card.setCardBackgroundColor(ContextCompat.getColor(context, R.color.clr_personal)); break;
+            case 1: holder.card.setCardBackgroundColor(ContextCompat.getColor(context, R.color.clr_trabajo)); break;
+            case 2: holder.card.setCardBackgroundColor(ContextCompat.getColor(context, R.color.clr_casa)); break;
+            case 3: holder.card.setCardBackgroundColor(ContextCompat.getColor(context, R.color.clr_vacaciones)); break;
         }
 
     }
