@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Submenu Primero">
+        <menu>
+            <item
+                android:id="@+id/mnuChat"
+                android:title="Chatear"
+                android:icon="@drawable/ic_chat">
+            </item>
+            <item
+                android:id="@+id/mnuMail"
+                android:title="Enviar email"
+                android:icon="@drawable/ic_mail">
+            </item>
+        </menu>
+    </item>
+    <item android:title="Submenu Segundo">
+        <menu>
+            <item
+                android:id="@+id/mnuPhone"
+                android:title="Llamar por tel"
+                android:icon="@drawable/ic_phone">
+            </item>
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mnuSalir"
+        android:title="Salir"
+        android:icon="@drawable/ic_exit">
+    </item>
+
+</menu>
